@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>frame</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.1.6.2.min.js"></script>
+</head>
+
+<body>
+
+<div class="body-frame">
+<div class="body-bg">
+    <div class="frame" id="frame" style="background:url('images/1-frame.png') no-repeat 0 0 transparent;"></div>    
+    <div class="line-one" id="mat_one" >
+        <div class="line-two" id="mat_two">
+            <div class="line-three" id="mat_three">
+            </div>
+        </div>
+    </div>
+    <div class="frame-photo" id="main_img" style="background: url(images/frame-photo.png) no-repeat 0 0 transparent;"></div>
+</div>
+<div class="f-thumb">
+    <h1>Frames </h1>
+    <ul id="frames_list">
+        <li datasrc="images/1-frame.png"><a href="javascript:void(0);"><img src="images/1.jpg" alt="0"/></a></li>
+        <li datasrc="images/2-frame.png"><a href="javascript:void(0);"><img src="images/2.jpg" alt="0"/></a></li>
+        <li datasrc="images/3-frame.png"><a href="javascript:void(0);"><img src="images/3.jpg" alt="0"/></a></li>
+        <li datasrc="images/4-frame.png"><a href="javascript:void(0);"><img src="images/4.jpg" alt="0"/></a></li>
+        <li datasrc="images/5-frame.png"><a href="javascript:void(0);"><img src="images/5.jpg" alt="0"/></a></li>
+    </ul>
+</div>
+
+<div class="mats"><h1>Mats</h1>
+    <h3>Mat Layer</h3>
+    <ul id="">
+        <li title="0">0</li>
+        <li title="1">1</li>
+        <li title="2">2</li>
+        <li title="3">3</li>
+    </ul>
+    <h3>Mat Colour</h3>
+<ul id="mat_color">
+    <li style="background:#ff0000;" title="RED"></li>
+    <li style="background:#00ff00;" title="GREEN"></li>
+    <li style="background:#0000ff;" title="BLUE"></li>
+    <li style="background:#000000;" title="BLACK"></li>
+</ul>
+</div>
+
+</div>
+<script type="text/javascript">
+$('#frames_list li').click(function(){
+    $('#frame').css('background','url('+$(this).attr("datasrc")+') no-repeat 0 0 transparent');
+});
+$('#mat_color li').click(function(){
+    $("#mat_one").attr('style',$(this).attr('style')); 
+});
+</script>
+</body>
+</html>

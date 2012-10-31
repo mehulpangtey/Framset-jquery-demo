@@ -1,0 +1,19 @@
+* {margin: 0; padding:0;}
+
+.body-frame {width: 900px; height: 418px; margin: 0 auto;}
+.body-bg {background: url(../images/body-bg.jpg) 0 0 repeat-x; height: 388px; padding-top: 30px; /* total height: 418px*/}
+.frame {background: url(../images/frame.png) 0 0 no-repeat; height: 305px; height:357px; margin: 0 0 0 206px; }
+.line-one {height: 357px;  width: 305px; background: url(../images/line-one.png) 0 0 no-repeat;}
+.line-two {height: 357px;  width: 305px; background: url(../images/line-two.png) 0 0 no-repeat;}
+.line-three {height: 357px;  width: 305px; background: url(../images/line-three.png) 0 0 no-repeat;}
+.frame-photo {background: url(../images/frame-photo.png) 0 0 no-repeat; height: 357px;  width: 305px;}
+
+
+.f-thumb {margin-bottom: 20px;}
+.f-thumb h1 {color: #777777; font-family: arial;}
+.f-thumb ul {overflow: hidden;}
+.f-thumb ul li {float: left; list-style: none;}
+.f-thumb ul li a { border: 1px solid #CCCCCC; display: block; height: 120px; text-align: center; width: 120px; height: 120px;}
+
+.mats { height: 100px;}
+.mats h1 {color: #777777; font-family: arial;}
